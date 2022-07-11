@@ -1,8 +1,11 @@
 # Test coverage for TON SDK Manifest
 
 🟢 = has tests
+
 🟡 = not tested yet
+
 ⚪️ = not applicable to implementation or uses language's stdlib
+
 🔵 = not implemented
 
 - Cryptography
