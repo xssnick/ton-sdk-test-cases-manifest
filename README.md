@@ -64,19 +64,19 @@
         - [created from byte array](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-bitstring/src/commonTest/kotlin/org/ton/bitstring/BitStringTest.kt#L132) 🟢
         - [created from boolean array](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-bitstring/src/commonTest/kotlin/org/ton/bitstring/BitStringTest.kt#L133) ⚪️
 - Cell
-    - check `cell.bits.size` in `0..1023`
+    - check `cell.bits.size` in `0..1023` 🟢
     - check references count
-        - check for `ORDINARY(-1)` in `0..4`
+        - check for `ORDINARY(-1)` in `0..4` 🟢
         - check for `PRUNED(1)` == `0` 🔵
         - check for `LIBRARY_REFERENCE(2)` in `1..4` 🔵
         - check for `MERKLE_PROOF(3)` == `1` 🔵
         - check for `MERKLE_UPDATE(4)` == `2` 🔵
-    - [check representation bytes](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonMain/kotlin/org/ton/cell/DataCell.kt#L97)
+    - [check representation bytes](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonMain/kotlin/org/ton/cell/DataCell.kt#L97) 🟢
         - [check computation of max depth](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonTest/kotlin/org/ton/cell/CellTest.kt#L9) 
         - [check computation of cell descriptors d1,d2](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonTest/kotlin/org/ton/cell/CellTest.kt#L81) 🟢
             - [check reference descriptor (d1)](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonMain/kotlin/org/ton/cell/DataCell.kt#L86) 🟢
             - [check bits descriptor (d2)](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonMain/kotlin/org/ton/cell/DataCell.kt#L89) 🟢
-        - [check augment bytes](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonMain/kotlin/org/ton/cell/DataCell.kt#L92)
+        - [check augment bytes](https://github.com/andreypfau/ton-kotlin/blob/363504ec96e821d4178dc09a2234377fd02808e9/ton-cell/src/commonMain/kotlin/org/ton/cell/DataCell.kt#L92) 🟢
     - check computation of cell hash
         - usage of sha256 🟢
 - CellSlice
